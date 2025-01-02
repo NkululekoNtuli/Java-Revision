@@ -6,12 +6,16 @@ public class Ch4_CreateSpaServices2
 {
     public static void main(String[] args)
     {
-        Ch4_SpaService firstService = new Ch4_SpaService();
-        Ch4_SpaService secondService = new Ch4_SpaService();
+        Ch4_SpaService2 firstService = new Ch4_SpaService2();
+        Ch4_SpaService2 secondService = new Ch4_SpaService2();
         firstService = getData(firstService);
-        secondService = getData(secondService);
+        //secondService = getData(secondService);
+        System.out.println(firstService.getServiceDescription() +
+                " R" + firstService.getPrice());
+        System.out.print(secondService.getServiceDescription() +
+                " R" + secondService.getPrice());
     }
-    public static Ch4_SpaService getData(Ch4_SpaService service)
+    public static Ch4_SpaService2 getData(Ch4_SpaService2 service)
     {
         String serviceDescription;
         double price;
